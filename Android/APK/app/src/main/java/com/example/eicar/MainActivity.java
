@@ -1,0 +1,20 @@
+package com.eicar.test;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        TextView tv = findViewById(R.id.textView);
+        String payload = "X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*";
+        tv.setText("EICAR Test APK\n\n" + payload);
+
+        Toast.makeText(this, "EICAR Payload Loaded", Toast.LENGTH_SHORT).show();
+    }
+}
