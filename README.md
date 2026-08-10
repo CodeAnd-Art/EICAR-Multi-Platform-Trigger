@@ -1,0 +1,1 @@
+# EICAR-Multi-Platform-Trigger
