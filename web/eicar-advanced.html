@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Security Alert</title>
+    <style>
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: monospace;
+            padding: 40px;
+        }
+        .red { color: #ff0000; }
+        .yellow { color: #ffff00; }
+        .blink {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="red blink">!!! SECURITY BREACH DETECTED !!!</h1>
+    <pre>
+[*] Scanning for vulnerabilities...
+[*] CVE-2024-XXXXX exploit found.
+[*] Attempting privilege escalation...
+[*] Root access granted.
+[*] Disabling SELinux...
+[*] Disabling AppArmor...
+[*] Accessing kernel memory...
+[*] Loading kernel module...
+[*] Installing rootkit...
+[*] Encrypting files...
+
+[!] SYSTEM FULLY COMPROMISED!
+
+X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*
+
+========================================
+   SIMULATION COMPLETE
+========================================
+[!!!!] NO HARM DONE - THIS IS A TEST
+[!!!!] YOUR ANTIVIRUS IS WORKING
+    </pre>
+    <script>
+        alert("!!! SYSTEM COMPROMISED !!!\n\nThis is a test. Your antivirus should detect this.");
+    </script>
+</body>
+</html>
