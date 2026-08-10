@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>⚠ SYSTEM BREACH ⚠</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        body {
+            background: #000;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            padding: 30px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            border: 2px solid #ff0000;
+            padding: 40px;
+            max-width: 800px;
+            background: #0a0a0a;
+            box-shadow: 0 0 50px rgba(255,0,0,0.3);
+        }
+        .red { color: #ff0000; }
+        .yellow { color: #ffff00; }
+        .blink {
+            animation: blink 1.5s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .payload {
+            color: #00ff00;
+            font-weight: bold;
+            font-size: 18px;
+            background: #001100;
+            padding: 15px;
+            border-left: 4px solid #ff0000;
+            margin: 20px 0;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="red blink">⚠ KERNEL EXPLOIT ATTEMPT ⚠</h1>
+        <br>
+        <div>
+            <span class="yellow">[*]</span> Scanning for vulnerabilities...<br>
+            <span class="yellow">[*]</span> CVE-2024-XXXXX exploit detected.<br>
+            <span class="yellow">[*]</span> Attempting privilege escalation...<br>
+            <span class="yellow">[*]</span> Root access granted (simulated).<br>
+            <span class="yellow">[*]</span> Disabling SELinux...<br>
+            <span class="yellow">[*]</span> Disabling AppArmor...<br>
+            <span class="yellow">[*]</span> Accessing kernel memory...<br>
+            <span class="yellow">[*]</span> Loading kernel module...<br>
+            <span class="yellow">[*]</span> Installing rootkit...<br>
+            <span class="yellow">[*]</span> Encrypting files...<br>
+            <br>
+            <span class="red blink">[!] SYSTEM FULLY COMPROMISED!</span>
+        </div>
+        <div class="payload">
+            X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*
+        </div>
+        <div>
+            <span class="yellow">[!!!!]</span> SIMULATION COMPLETE - NO HARM DONE<br>
+            <span class="yellow">[!!!!]</span> YOUR SECURITY SYSTEM IS WORKING
+        </div>
+    </div>
+    <script>
+        alert("⚠ SYSTEM BREACH DETECTED!\n\nThis is a test. Your antivirus should detect this.");
+        console.log("EICAR Test Payload: X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*");
+    </script>
+</body>
+</html>
