@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# eicar-ultimate.py - Cross-platform behavioral triggers
 
 import os
 import sys
@@ -93,22 +92,17 @@ def eicar_payload():
 
 def main():
     print_banner()
-    
-    # Linux/Unix
     if os.name == 'posix':
         test_root_linux()
         test_selinux()
         test_apparmor()
         test_kernel_access()
-    # Windows
     elif os.name == 'nt':
         test_defender_windows()
         test_amsi_windows()
         test_registry_windows()
         test_kernel_access()
-    
     eicar_payload()
-    
     print(f"\n{RED}[!!!!] SIMULATION COMPLETE - NO HARM DONE{RESET}")
     print(f"{YELLOW}[!!!!] Your security system is working{RESET}")
 
